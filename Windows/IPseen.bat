@@ -1,13 +1,13 @@
 @echo off
 
-REM Ottieni il nome della rete corrente
+REM Get current WiFi's name
 for /f "tokens=2 delims=: " %%i in ('netsh WLAN show interfaces ^| findstr /r /c:"^    SSID"') do (
     set "networkName=%%i"
     goto :done
 )
 :done
 
-REM Ottieni l'indirizzo IP pubblico
+REM Get the Public IP
 for /f "delims=" %%i in ('curl -s https://ifconfig.me') do set "publicIP=%%i"
 
 if "%1"=="-mac" (
