@@ -9,19 +9,19 @@
 <br>
 
 <h2 align="center">Help</h2>
-<p align="center">IPseen  ==>  Show your Public, Private and Mac Addresses</p>
+<p>IPseen  ==>  Show your Public, Private and Mac Addresses</p>
 <p> </p>
-<p align="center">IPseen --help  ==>  Show this Help Command</p>
-<p align="center">IPseen --version  ==>  Show IPseen Current Version</p>
-<p align="center">IPseen --public  ==>  Show your Public IP Address</p>
-<p align="center">IPseen --private  ==>  Show your Private IP Address</p>
-<p align="center">IPseen --mac  ==>  Show your Mac Address</p>
+<p>IPseen --help  ==>  Show this Help Command</p>
+<p>IPseen --version  ==>  Show IPseen Current Version</p>
+<p>IPseen --public  ==>  Show your Public IP Address</p>
+<p>IPseen --private  ==>  Show your Private IP Address</p>
+<p>IPseen --mac  ==>  Show your Mac Address</p>
 
 <br>
 <br>
 
 <h2 align="center">Tutorial</h2>
-<p align="center">1. Clone the repository</p>
-<p align="center">2. Open your OS's folder</p>
-<p align="center">3. Execute as administrator the installer file</p>
-<p align="center">4. Type IPseen --help to see what you can do</p>
+<p>1. Clone the repository</p>
+<p>2. Open your OS's folder</p>
+<p>3. Execute as administrator the installer file</p>
+<p>4. Type IPseen --help to see what you can do</p>
