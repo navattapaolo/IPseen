@@ -1,4 +1,4 @@
-<h1 align="center">IPseen 0.01</h1>
+<h1 align="center">IPseen</h1>
 
 <p align ="center">
 <img alt="Version: 0.01" src="https://img.shields.io/badge/Version%20-%200.01%20-%20black">
