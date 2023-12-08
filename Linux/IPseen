@@ -19,7 +19,7 @@ elif [ "$1" == "--help" ]; then
     echo "IPseen --private	Show your Private IP Address"
     echo "IPseen --mac		Show your MAC Address"
 else
-	echo Private IP Address
+	echo Private IP Address:
     	hostname -I
 	echo " "
 	echo Public IP Address: 
