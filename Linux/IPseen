@@ -19,7 +19,12 @@ elif [ "$1" == "--help" ]; then
     echo "IPseen --private	Show your Private IP Address"
     echo "IPseen --mac		Show your MAC Address"
 else
-    ip addr show
+	echo Private IP Address
+    	hostname -I
+	echo " "
 	echo Public IP Address: 
 	dig +short myip.opendns.com @resolver1.opendns.com
+	echo " "
+	echo Mac Address:
+	ip link show | awk '/ether/ {print $2}'
 fi
