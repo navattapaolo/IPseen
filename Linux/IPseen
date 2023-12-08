@@ -3,7 +3,7 @@
 
 if [ "$1" == "--mac" ]; then
     ip link show | awk '/ether/ {print $2}'
-elif [ "$1" == "-private" ]; then
+elif [ "$1" == "--private" ]; then
     hostname -I
 elif [ "$1" == "--public" ]; then
     dig +short myip.opendns.com @resolver1.opendns.com
