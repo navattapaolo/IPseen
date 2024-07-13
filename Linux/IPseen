@@ -6,7 +6,7 @@ if [ "$1" == "--mac" ]; then
 elif [ "$1" == "--private" ]; then
     hostname -I
 elif [ "$1" == "--public" ]; then
-    dig +short myip.opendns.com @resolver1.opendns.com
+    curl https://ipinfo.io/ip
 elif [ "$1" == "--version" ]; then
     echo "IPseen 0.01"
     
@@ -23,8 +23,9 @@ else
     	hostname -I
 	echo " "
 	echo -e "\033[1mPublic IP Address:\033[0m"
-	dig +short myip.opendns.com @resolver1.opendns.com
+	curl https://ipinfo.io/ip
 	echo " "
+	echo -e " "
 	echo -e "\033[1mMAC Address:\033[0m"
 	ip link show | awk '/ether/ {print $2}'
 fi
