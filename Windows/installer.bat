@@ -1,31 +1,15 @@
 @echo off
-setlocal
 
-REM Define the directory where the script is located
+REM Get the directory of this script
+setlocal
 set "scriptDir=%~dp0"
 
-REM Define the name of the folder and environment variable
-set "folderName=IPseen"
-set "envVarName=IPseen"
+REM Remove trailing backslash if exists
+if "%scriptDir:~-1%"=="\" set "scriptDir=%scriptDir:~0,-1%"
 
-REM Define the full path for the folder
-set "folderPath=%scriptDir%%folderName%"
+REM Add the directory to the PATH environment variable
+setx PATH "%PATH%;%scriptDir%"
 
-REM Create the folder if it does not exist
-if not exist "%folderPath%" (
-    echo Creating folder "%folderPath%"
-    mkdir "%folderPath%"
-) else (
-    echo Folder "%folderPath%" already exists.
-)
-
-REM Set the user environment variable
-echo Setting user environment variable "%envVarName%" to "%folderPath%"...
-setx %envVarName% "%folderPath%"
-
-REM Notify the user
-echo User environment variable "%envVarName%" has been set to "%folderPath%".
-echo You can now use "%envVarName%" in your command prompts to reference the folder.
-
-REM Wait for a key press to close the prompt
-pause
+:: Inform the user
+echo Directory "%scriptDir%" has been added to the PATH environment variable.
+echo Please restart your Command Prompt for changes to take effect.
